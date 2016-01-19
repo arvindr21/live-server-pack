@@ -1,0 +1,58 @@
+{
+	"name": "live-server",
+	"version": "0.9.0",
+	"description": "simple development http server with live reload capability",
+	"keywords": [
+		"front-end",
+		"development",
+		"tool",
+		"server",
+		"http",
+		"cli"
+	],
+	"author": "Tapio Vierros",
+	"dependencies": {
+		"colors": "latest",
+		"connect": "2.x.x",
+		"event-stream": "latest",
+		"faye-websocket": "0.9.x",
+		"object-assign": "^2.0.0",
+		"opn": "latest",
+		"send": "latest",
+		"watchr": "2.3.x"
+	},
+	"devDependencies": {
+		"mocha": "^2.3.3",
+		"supertest": "1.0.1"
+	},
+	"scripts": {
+	"test": "mocha test",
+	"lint": "jshint *.js; eslint *.js"
+	},
+	"bin": {
+		"live-server": "./live-server.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/tapio/live-server.git"
+	},
+	"engines": {
+		"node": ">=0.8.0"
+	},
+	"preferGlobal": true,
+	"license": "MIT",
+	"eslintConfig": {
+		"env": {
+			"node": true
+		},
+		"rules": {
+			"quotes": 0,
+			"curly": 0,
+			"strict": 0,
+			"no-process-exit": 0,
+			"eqeqeq": 1,
+			"no-unused-vars": 1,
+			"no-shadow": 1
+		}
+	}
+}
